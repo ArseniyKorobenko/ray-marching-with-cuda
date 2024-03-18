@@ -14,6 +14,10 @@ Software info:
 > nvcc V12.4.99  
 > requires additional arguments `--expt-extended-lambda -Xcompiler "-openmp"` (included in VS solution)
 
+Building:
+> This is a Visual Studio project, so you can (hopefully) use the solution to build it  
+> main.cu is the only non-header file, so the only build step is calling `nvcc main.cu` with correct arguments
+
 Sample output:  
 ```
 GPU finished in 0.194812 seconds.                                                                             
